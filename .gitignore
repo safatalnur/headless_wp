@@ -1,0 +1,29 @@
+# 1. Ignore all files and folders in the root
+/*
+
+# 2. Allow the .gitignore file itself to be tracked
+!.gitignore
+
+# 3. Exception: Do NOT ignore the wp-content directory
+!wp-content/
+
+# 4. Optional: Ignore heavy/dynamic folders inside wp-content
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/cache/
+wp-content/index.php
+wp-content/plugins/index.php
+wp-content/themes/index.php
+wp-content/themes/twentytwentyfive/
+wp-content/plugins/wordpress-importer/
+
+
+# WordPress core config — not part of this repo's wp-content mount, but excluded defensively
+wp-config.php
+
+# OS junk
+.DS_Store
+
+# environment variables
+.env
+.env.production
