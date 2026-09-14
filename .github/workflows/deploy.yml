@@ -21,4 +21,4 @@ jobs:
           REMOTE_USER: ${{ secrets.VPS_USER }}
           SOURCE: "wp-content/"
           TARGET: ${{ secrets.VPS_PATH }}
-          ARGS: "-avzr"
+          ARGS: "-rvz"
